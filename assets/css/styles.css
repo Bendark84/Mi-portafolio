@@ -1,0 +1,437 @@
+/*font Inter*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+/*font-family: 'Inter', sans-serif;*/
+
+:root{
+    --color-principal: #1f1d2c;
+    --accent-color: #f1a600;
+    --rectangulos: #242635;
+    --gris-claro: #e5e5e5;
+    --blanco: #ffffff;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Inter', sans-serif;
+    background-color: var(--color-principal);
+    color: var(--blanco);
+}
+ html{
+    scroll-behavior: smooth; /*este es para cuando le de click a una seccion se vaya hacia ella de forma suave*/
+} 
+.logo > img{
+    width: 10%;
+    height: 10%;
+}
+.flotante-2 > img{ /* foto Benja*/
+    width: 250px;
+    
+}
+.card{
+    position: relative;
+    
+}
+
+.card1{
+    background-color:var(--color-principal);
+    height: 450px;  /*450px*/
+    width: 100%;
+    color: var(--blanco);
+    padding: 1.5rem 1rem;
+    
+}
+.header{
+    display: relativo;
+    
+}
+.flotante-1{ /*Rectangulo*/
+    position: absolute;
+    left: 40%; /*200px*/
+    top: 0;
+    z-index: 0;
+}
+
+.flotante-2{
+    position: absolute;
+    left: 50%;     /*210px*/
+    bottom: 5%;
+}
+.letras{
+    position: absolute;
+    z-index: 10;
+}
+.navBar{
+    
+    display: flex;
+    position: relative;
+    z-index: 20;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;    
+    height: 60px;
+    
+    
+}
+/*menu hamburguesa*/
+
+.logo img{
+    position: relative;
+    z-index: 20;
+}
+
+
+input#menu-hamburguesa{
+    visibility: hidden;
+}
+input#menu-hamburguesa ~ ul{
+    background-color: var(--color-principal);
+    list-style: none;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    left: 0;
+    height: calc(100vh-60px);
+    top:40px;
+    display: none;
+    flex-direction: column;
+    align-items:center;
+    gap: 4rem;
+    padding: 2rem 1rem;
+}
+
+input#menu-hamburguesa:checked ~ ul{
+    display: flex;
+}
+/**********/
+
+a{
+    color:var(--blanco);
+    text-decoration: none;
+    list-style-type: none;/* para quitar los puntos de una lista*/
+}
+h1{
+    font-size: 50px;
+    font-weight:600px
+}
+h2{
+    font-size: 30px;
+}
+h3{
+    font-size:18px;
+   
+}
+.item-1{
+    color:var(--accent-color);
+}
+span{
+    color:var(--accent-color);
+}
+
+/*iconnos de cuentas sociales*/
+.iconos-sociales{
+    display: flex;
+    position: absolute;
+    top: 380px;
+    gap: 1.5rem;
+    
+    
+}
+
+
+/***********************************************************/
+/*Acerca de mi Card2*/
+
+
+.card2{
+    text-align: center;
+    background-color:var(--rectangulos);
+    height: 450px;
+    width: 100%;
+    padding: 1.5rem 1.5rem;
+    
+}
+.logo-Estudios{
+    display: flex;
+    position: absolute;
+    gap: 18rem;
+    padding: 1rem;
+    
+}
+.logo-Academlo > img{ 
+    width: 60px;
+    display: flex;
+    position: absolute;
+    top: -10px;
+   
+}
+.logo-Universidad > img{ 
+    width: 150px;
+    display: flex;
+    position: absolute;
+    top: -20px;
+    left: 230px;
+    
+}
+
+/********************************************/
+/*Experiencia Card3*/
+.card3{
+    text-align: center;
+    background-color:var(--color-principal);
+    height: 450px;
+    width: 100%;
+    padding: 1.5rem 1.5rem;
+    
+}
+
+.barra>img{
+    position: relative;
+    right: -150px;
+    top: -350px;
+}
+
+.contenedor-desarrolador > ul{
+    list-style: none;
+}
+.contenedor-generalista > ul{
+    list-style: none;
+}
+
+
+
+/*********************************************/
+/*Mis habildiades Card4*/
+.card4{
+    text-align: center;
+    background-color:var(--rectangulos);
+    height: 450px;
+    width: 100%;
+    padding: 1.5rem 1.5rem;
+    
+}
+
+.habilidades-h3 > span{
+    font-size: 40px;
+    
+}
+.habilidades-h3{
+    text-align: left;
+    
+}
+
+
+/*************************************/
+/*Mi portafolio Card5*/
+.card5{
+    text-align: center;
+    background-color:var(--color-principal);
+    height: 450px;
+    width: 100%;
+    padding: 1.5rem 1.5rem;
+    
+}
+
+.portafolio-1{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: auto;
+    gap: 1rem;
+}
+
+.portafolio-1 > img{
+    width: 150px;
+    max-width: 100%;
+    object-fit: cover;
+}
+.imagen-2{
+    position: relative;
+    right: -220px;
+}
+.imagen-3{
+    position: relative;
+    top: -20px;
+}
+
+/*************************************/
+/*Contacto Card6*/
+.card6{
+    text-align: center;
+    background-color:var(--rectangulos);
+    height: 450px;
+    width: 100%;
+    padding: 1.5rem 1.5rem;    
+}
+
+/*.contacto-card{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    align-items: center;
+}*/
+
+/*************************************/
+/*Footer Card7*/
+.card7{
+    text-align: center;
+    background-color:var(--color-principal);
+    height: 50px;
+    width: 100%;
+    padding: 1.5rem 1.5rem;
+    
+}
+
+/*Responsividad para la web*/
+
+@media screen and (min-width:940px ){
+    label{
+        display: none;
+    }
+    input#menu-hamburguesa ~ ul{
+        position: static;
+        display: flex;
+        flex-direction: row;
+        height: auto;
+        justify-content: flex-end;        
+    }
+    h1{
+        font-size:80px;
+    }
+    h2{
+        font-size: 40px;
+    }
+    h3{
+        font-size: 25px;
+       
+    }
+    body{
+        font-size: 18px;
+    }
+
+    input#menu-hamburguesa ~ ul{
+        background-color: transparent;
+    }
+    .card{
+        padding: 1rem 4rem;
+    }
+    .card2{
+        padding: 1rem 4rem;
+    }
+    .logo img{
+        visibility: hidden;
+    }
+    .iconos-sociales{
+        display: flex;
+        position: absolute;
+        top: 420px;
+        gap: 1.5rem;
+        
+        
+    }
+    .flotante-1{ /*Rectangulo*/
+        visibility: hidden;
+        
+        
+    }
+    .flotante-2 > img{ /* foto Benja*/
+        width: 350px;
+        
+    }
+
+    .logo-Estudios{
+        display: flex;
+        position: absolute;
+        gap: 50rem;
+        padding: 1rem 1.5rem;
+               
+    }
+
+    .logo-Academlo > img{ 
+        width: 150px;
+        display: flex;
+        position: absolute;
+        top: -20px;
+       
+    }
+    .logo-Universidad > img{ 
+        width: 300px;
+        display: flex;
+        position: relative;
+        top: -20px;
+        right: 100%;
+        
+    }
+    /*.card3{
+        display: grid; 
+        grid-template-columns: 1fr 1fr;
+        grid-auto-rows: auto;
+
+    }*/
+
+    .card-experiencias{
+        display: flex;
+        justify-content: center;
+        gap: 6rem;
+        align-items: center;
+        
+    }
+    .barra>img{
+        position: relative;
+        right: -80px;
+        top: -50px;
+    }
+   
+
+    .portafolio-1{        
+        grid-template-columns: 1fr 1fr;
+        
+    }
+
+    .portafolio-1 > img{
+        width: 250px;
+        max-width: 100%;
+        object-fit: cover;
+    }
+    .imagen-1{
+        position: relative;
+        right: -30%;
+    }
+    .imagen-2{
+        position: relative;
+        right: -60%;
+    }
+    .imagen-3{
+        position: relative;
+        top: -60px;
+        right: -90%;
+    }
+
+    .habilidades-h3{
+        text-align: center;
+        
+    }
+
+    .contacto-card{
+        display: flex;
+        justify-content: center;
+        gap: 6rem;
+        align-items: center;
+                
+    }
+
+    .contacto{
+        position: relative;
+        top: 100px;
+    }
+    .correo{
+        position: relative;
+        top: 100px;
+    }
+    
+
+    
+}
